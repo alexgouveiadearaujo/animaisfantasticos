@@ -11,8 +11,12 @@ function initAnimationScroll(){
             sections.forEach((section) =>{
                 const sectionTop = section.getBoundingClientRect().top;
                 const sectionVisible = (sectionTop - calcWindow) < 0;
-                if(sectionVisible) section.classList.add('ativo');
-                else section.classList.remove('ativo');
+                if(sectionVisible) {
+                    section.classList.add('ativo');
+                }
+                else if(section.classList.contains('ativo')){
+                    section.classList.remove('ativo');
+                }
             });
         };
         
@@ -23,4 +27,4 @@ function initAnimationScroll(){
 
 };
 
-//animationScroll();
+
