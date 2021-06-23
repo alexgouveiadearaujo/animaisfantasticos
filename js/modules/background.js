@@ -1,6 +1,6 @@
 export 
 function initBackground(){
-    const button = document.querySelector('.menu button');
+    const button = document.querySelector('[data-menu="list"] button');
     function activeBackground() {
         const ativar = button.classList.toggle('ativo');
         if (ativar) {
@@ -12,7 +12,8 @@ function initBackground(){
             button.textContent = 'Nox';
         }
     };
-    button.addEventListener('click', activeBackground);
+    button.addEventListener('click', activeBackground) ;
+    // setTimeout(() => button.addEventListener('click', activeBackground)) ;
 };
 
 
