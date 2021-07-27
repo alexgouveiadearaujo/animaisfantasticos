@@ -7,8 +7,8 @@ import {initModal} from './modules/modal.js';
 import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdownMenu.js';
 import initMenuMobile from './modules/menu-mobile.js';
-import initNumbers from './modules/numbers.js';
 import initOperation from './modules/operation.js'
+import initFetch from './modules/fetch.js'
 
 initTab();
 initSmoothScroll();
@@ -19,9 +19,8 @@ initModal();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
-initNumbers();
 initOperation();
-
+initFetch();
 
 
 
