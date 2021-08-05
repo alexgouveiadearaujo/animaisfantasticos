@@ -8,7 +8,8 @@ import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdownMenu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initOperation from './modules/operation.js'
-import initFetch from './modules/fetch.js'
+import initFetchAnimals from './modules/fetch-animals.js'
+import initFetchBitcoin from './modules/fetch-bitcoin.js';
 
 initTab();
 initSmoothScroll();
@@ -20,7 +21,8 @@ initTooltip();
 initDropdownMenu();
 initMenuMobile();
 initOperation();
-initFetch();
+initFetchAnimals();
+initFetchBitcoin();
 
 
 
