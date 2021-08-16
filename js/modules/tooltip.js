@@ -18,21 +18,21 @@ export default
 
         onMouseMove.tooltipBox = tooltipBox;
         this.addEventListener('mousemove', onMouseMove);
-    };
+    }
 
     const onMouseLeave = {
         handleEvent() {
             this.tooltipBox.remove();
             this.element.removeEventListener('mouseleave', onMouseLeave);
             this.element.removeEventListener('mousemove', onMouseMove);
-        }
+        },
     };
 
     const onMouseMove = {
         handleEvent(e) {
             this.tooltipBox.style.top = e.pageY + 20 + 'px';
             this.tooltipBox.style.left = e.pageX + 20 + 'px';
-        }
+        },
     };
 
     function createTooltipBox(element) {
@@ -42,6 +42,6 @@ export default
         tooltipBox.innerText = text;
         document.body.appendChild(tooltipBox);
         return tooltipBox;
-    };
+    }
 
-};
+}

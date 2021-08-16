@@ -1,0 +1,22 @@
+{
+  "name": "animaisfantasticos",
+  "version": "1.0.0",
+  "description": "<p>Link: https://alexgouveiadearaujo.github.io/animaisfantasticos/</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexgouveiadearaujo/animaisfantasticos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexgouveiadearaujo/animaisfantasticos/issues"
+  },
+  "homepage": "https://github.com/alexgouveiadearaujo/animaisfantasticos#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}

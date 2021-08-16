@@ -14,11 +14,13 @@ export default function initNumbers() {
 
                 if (start > total) {
                     n.innerText = total;
-                    clearInterval(timer)
+                    clearInterval(timer);
                 }
-            }, 50 * Math.random())
+            }, 50 * Math.random());
         });
     }
+
+    const observer = new MutationObserver(handleMutation);
 
     function handleMutation(mutation) {
         if (mutation[0].target.classList.contains('ativo')) {//scroll-anime
@@ -28,8 +30,7 @@ export default function initNumbers() {
     }
 
     const observerTarget = document.querySelector('.numbers');
-    const observer = new MutationObserver(handleMutation);
 
-    observer.observe(observerTarget, { attributes: true })
+    observer.observe(observerTarget, { attributes: true });
 
 }

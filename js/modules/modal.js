@@ -10,7 +10,7 @@ function initModal(){
            e.preventDefault();
            containerModal.classList.toggle('ativo');
        
-       };
+       }
        
     //    function closeModal(){
     //        containerModal.classList.remove('ativo');
@@ -18,14 +18,14 @@ function initModal(){
        
        function clickOutsideModal(e){
            if(e.target === this) toggleModal(e);
-       };
+       }
        
        openButton.addEventListener('click' , toggleModal);
        closeButton.addEventListener('click' , toggleModal);
        containerModal.addEventListener('click' , clickOutsideModal);
-   };
+   }
   
 
- };
+ }
 
 

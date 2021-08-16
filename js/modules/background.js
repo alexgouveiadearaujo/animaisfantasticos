@@ -11,10 +11,10 @@ function initBackground(){
             document.body.classList.remove('mudarBg');
             button.textContent = 'Nox';
         }
-    };
+    }
     button.addEventListener('click', activeBackground) ;
     // setTimeout(() => button.addEventListener('click', activeBackground)) ;
-};
+}
 
 
 
