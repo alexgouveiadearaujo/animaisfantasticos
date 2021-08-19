@@ -1,5 +1,5 @@
 import initTab from './modules/tabs.js'
-import initSmoothScroll from './modules/scroll-smooth.js';
+import SmoothScroll from './modules/scroll-smooth.js';
 import initAnimationScroll from './modules/scroll-anime.js';
 import activeAccordion from './modules/accordionList.js';
 import {initBackground} from './modules/background.js';
@@ -11,8 +11,13 @@ import initOperation from './modules/operation.js'
 import initFetchAnimals from './modules/fetch-animals.js'
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
 
+
+const smoothScroll =  new SmoothScroll('[data-menu="smooth"] a[href^="#"]');
+smoothScroll.init();
+
+
+
 initTab();
-initSmoothScroll();
 initAnimationScroll();
 activeAccordion();
 initBackground();
@@ -23,7 +28,6 @@ initMenuMobile();
 initOperation();
 initFetchAnimals();
 initFetchBitcoin();
-
 
 
 
