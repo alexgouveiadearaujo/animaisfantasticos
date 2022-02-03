@@ -3,7 +3,7 @@ import Accordion from './modules/accordionList.js';
 import Tab from './modules/tabs.js';
 import {initBackground} from './modules/background.js';
 import {initModal} from './modules/modal.js';
-import initTooltip from './modules/tooltip.js';
+import Tooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdownMenu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initOperation from './modules/operation.js'
@@ -20,11 +20,13 @@ accordion.init();
 
 const tab = new Tab('[data-tab="menu"] li' , '[data-tab="content"] section');
 tab.init();
+const tooltipa = new Tooltip('[data-tooltip]');
+tooltipa.init();
 
 
 initBackground();
 initModal();
-initTooltip();
+// initTooltip();
 initDropdownMenu();
 initMenuMobile();
 initOperation();
