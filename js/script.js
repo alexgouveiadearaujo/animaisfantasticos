@@ -10,7 +10,7 @@ import initOperation from './modules/operation.js'
 import initFetchAnimals from './modules/fetch-animals.js'
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
 import initAnimationScroll from './modules/scroll-anime.js';
-
+import { SlideNav } from "./modules/slide.js";
 
 const smoothScroll =  new SmoothScroll('[data-menu="smooth"] a[href^="#"]');
 smoothScroll.init();
@@ -22,6 +22,13 @@ const tab = new Tab('[data-tab="menu"] li' , '[data-tab="content"] section');
 tab.init();
 const tooltipa = new Tooltip('[data-tooltip]');
 tooltipa.init();
+
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+// slide.addArrow(".prev", ".next");
+slide.addControl(".custom-controls");
+
 
 
 initBackground();
